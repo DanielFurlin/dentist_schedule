@@ -14,7 +14,7 @@ import java.util.Date;
 public class Patient {
     private int id;
     private String name;
-    private Date birthDate;
+    private String birthDate;
     private String cpf;
     private String rg;
     private double weight;
@@ -30,7 +30,7 @@ public class Patient {
         return name;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
@@ -66,7 +66,7 @@ public class Patient {
         this.name = name;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
