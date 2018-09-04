@@ -14,12 +14,12 @@ import java.util.Date;
 public class Patient {
     private int id;
     private String name;
-    private String birthDate;
+    private Date birthDate;
     private String cpf;
     private String rg;
     private double weight;
     private double height;
-    private Address address;
+    //private Address address;
     private Contact contact;
 
     public int getId() {
@@ -30,7 +30,7 @@ public class Patient {
         return name;
     }
 
-    public String getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
@@ -50,9 +50,9 @@ public class Patient {
         return height;
     }
 
-    public Address getAddress() {
-        return address;
-    }
+//    public Address getAddress() {
+//        return address;
+//    }
 
     public Contact getContact() {
         return contact;
@@ -66,7 +66,7 @@ public class Patient {
         this.name = name;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -86,9 +86,9 @@ public class Patient {
         this.height = height;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
+//    public void setAddress(Address address) {
+//        this.address = address;
+//    }
 
     public void setContact(Contact contact) {
         this.contact = contact;
